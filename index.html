@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="task-creator">
+            <form onsubmit="return pushItem()">
+                <p>Please insert the items</p>
+                <textarea name="" id="box" cols="30" rows="1" placeholder="Title"></textarea>
+                <select name="" id="box2">
+                    <option value="Coding">Coding</option>
+                    <option value="Design">Design</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea  id="box3" name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    
+        <div class="output">
+            <ul>
+    
+            </ul>
+        </div>
+    </div>
+
+    <button onclick="clearLocalStorage()" class="remove">clear local storage</button>
+
+<script src="app.js"></script>
+</body>
+</html>
